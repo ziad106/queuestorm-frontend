@@ -1,6 +1,6 @@
 /* src/index.css */
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+/* Inter is loaded non-blocking from index.html so the page paints instantly
+   even if fonts.googleapis.com is slow/blocked; system fonts are the fallback. */
 
 *, *::before, *::after {
   box-sizing: border-box;
