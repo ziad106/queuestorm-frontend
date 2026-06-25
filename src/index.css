@@ -1,0 +1,48 @@
+/* src/index.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Palette — Airwallex-inspired */
+  --color-bg:           #08090E;   /* near-black, slightly blue */
+  --color-surface:      #111318;   /* card background */
+  --color-surface-2:    #1A1D24;   /* elevated surface */
+  --color-border:       #232730;   /* subtle border */
+  --color-border-hover: #363C4A;
+
+  --color-text-primary:   #F0F2F5;
+  --color-text-secondary: #8B95A6;
+  --color-text-muted:     #525D6E;
+
+  --color-accent:         #00C2A8;  /* teal — the one bold move */
+  --color-accent-dim:     #00C2A814;
+
+  /* Severity colors */
+  --color-low:      #4CAF82;   /* green */
+  --color-medium:   #F5A623;   /* amber */
+  --color-high:     #E87040;   /* orange */
+  --color-critical: #E84040;   /* red */
+
+  --color-low-bg:      #4CAF8214;
+  --color-medium-bg:   #F5A62314;
+  --color-high-bg:     #E8704014;
+  --color-critical-bg: #E8404014;
+
+  --font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --radius: 8px;
+  --radius-lg: 12px;
+}
+
+html, body, #root {
+  min-height: 100vh;
+  background: var(--color-bg);
+  color: var(--color-text-primary);
+  font-family: var(--font);
+  -webkit-font-smoothing: antialiased;
+}
